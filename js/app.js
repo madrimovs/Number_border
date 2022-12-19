@@ -9,9 +9,11 @@ ellForm.addEventListener("submit", function (evt) {
   const lowNumber = 10;
   if (inNumber < lowNumber) {
     elPurple.style.border = "10px solid purple";
+    elGold.style.border = "none";
   }
   if (inNumber >= lowNumber) {
     elGold.style.border = "10px solid gold";
+    elPurple.style.border = "none";
   }
 });
 function refresh() {
